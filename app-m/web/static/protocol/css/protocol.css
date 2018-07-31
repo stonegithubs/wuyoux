@@ -1,0 +1,138 @@
+html {
+    width: 100%;
+}
+
+body {
+    background: rgb(249, 249, 249);
+    margin: 0 !important;
+}
+
+/**公用底部样式*/
+.protocol-footer {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0 !important;
+}
+
+.footer-line {
+    margin: 20px 0;
+    line-height: 1px;
+    /*border-left: 200px solid #ddd;*/
+    /*border-right: 200px solid #ddd;*/
+    text-align: center;
+    margin: 0 30px 0;
+    height: 1px !important;
+}
+
+.footer-line img {
+    width: 28%;
+    height: 25px;
+    margin: 0 28px 0 28px!important;
+}
+
+.protocol-footer img {
+    height: 25px;
+    margin: 0 26px 0 26px!important;
+}
+.protocol-footer {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.protocol-footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.protocol-footer b {
+    background: #ddd;
+    margin-top: 15px;
+    float: left;
+    width: 26%;
+    height: 1px;
+    _overflow: hidden;
+}
+
+
+/**************************/
+/**头部图片样式**/
+.protocol-header-img {
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+/**个人摩托，非动车，理赔流程字体间隔**/
+.protocol-padding {
+    padding: 5%;
+}
+
+/**个人摩托，非动车，理赔流程H1，p字体格式*/
+h1 {
+    color: #666;
+    font-size: 1rem;
+}
+
+.line h1 {
+    margin: 5px 14px 0 14px;
+}
+
+.line {
+    overflow: hidden;
+    _zoom: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 26px;
+}
+
+.line b {
+    background: #ddd;
+    margin-top: 17px;
+    float: left;
+    width: 26%;
+    height: 1px;
+    _overflow: hidden;
+}
+.line-length{
+   width: 16%!important;
+}
+
+p {
+    font-size: 0.8rem !important;
+    /*line-height: 50px;*/
+    color: #666 !important;
+    text-align: left;
+    letter-spacing: 2px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0.8em;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.item p:nth-child(1) {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    width: 13rem;
+}
+
+.item p:nth-child(2) {
+    -webkit-box-flex: 40;
+    -ms-flex: 40;
+    flex: 40;
+}

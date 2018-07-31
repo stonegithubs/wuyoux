@@ -1,0 +1,190 @@
+.topDiv {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    height: 116px;
+    background: #fff;
+    opacity: 1;
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    -moz-box-shadow: 0px 0px 12px #DDDD;
+    -webkit-box-shadow: 0px 0px 12px #DDDD;
+    box-shadow: 0px 0px 12px #DDDD;
+}
+.topDivImg{
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+
+.topDiv .leftPicture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #e4e4e4;
+    margin-left: 25px;
+
+}
+
+.topDiv .rightImg {
+    height: 32px;
+    width: 32px;
+    /*vertical-align: middle;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*-webkit-align-items: center;*/
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.topDiv a {
+    /*position: absolute;*/
+    /*right: 32px;*/
+}
+
+.topDiv .centerText {
+    margin-left: 15px;
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+}
+
+.topDiv .centerText p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.topDiv .centerText .pingfenDiv {
+    display: flex;
+}
+
+.topDiv .centerText .pingfenDiv img {
+    margin-right: 5px;
+    height: 13px;
+    width: 13px;
+}
+
+.topDiv .centerText .pingfenDiv span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.footerDiv {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 91px;
+    background: #fff;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.footerDiv .leftPicture {
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+
+}
+
+.footerDiv .centerText {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.footerDiv .centerText .toptext {
+    font-size: 17px;
+    letter-spacing: 3px;
+
+}
+
+.footerDiv .centerText .bottext {
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 5px;
+}
+
+.footerDiv .rightImg {
+    /*position: absolute;*/
+    height: 36px;
+    width: 110px;
+    right: 15px;
+    border-radius: 36px;
+    background: #ff6000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footerPart{
+    display: flex;
+}
+
+.body {
+    background: #eeeeee
+}
+
+.ftopDiv {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftopDiv img {
+    width: 184px;
+    height: 112px;
+}
+
+.ftopDiv .toptext {
+    font-size: 17px;
+    color: #666666;
+    margin-top: 30px;
+}
+
+.ftopDiv .bottext {
+    font-size: 13px;
+    color: #666666;
+    margin-top: 12px;
+}
+
+#ditutip {
+    border-radius: 100px;
+    background: #fff;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    -moz-box-shadow: 0px 0px 20px #DDDD;
+    -webkit-box-shadow: 0px 0px 20px #DDDD;
+    box-shadow: 0px 0px 20px #DDDD;
+
+}
+
+#ditutip .left {
+    font-size: 11PX;
+    color: #333333;
+    width: 90px;
+    text-align: center;
+}
+
+#ditutip .right {
+    font-size: 11PX;
+    color: #ff6000;
+    width: 90px;
+    text-align: center;
+}
+

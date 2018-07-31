@@ -1,0 +1,200 @@
+#school,.wrap{ height: 100%}
+#school .page,
+#school .pages {
+	background: #fff;
+}
+
+#school .page-content {
+	padding: 10px 15px 80px 15px !important
+}
+.school_index{ background: #f1f1f1;}
+.school_index_box{ background: #fff;    padding: 20px 10px;}
+.school_index .title {
+	text-align: center;
+	font-size: 20px;
+}
+
+.school_index .title i {
+	color: #FDBC02;
+	font-size: 24px;
+}
+
+.school_index .sub_title {
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 5px 0;}
+
+.school_index .task_list {
+	margin-top: 15px;
+}
+
+.school_index .task_list li {
+	background: #f2f2f2;
+	clear: both;
+    height: 80px;
+	margin-bottom: 10px;
+	padding: 15px;
+	border-radius: 2px;
+}
+
+.school_index .task_list li .icon {
+	float: left;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.school_index .task_list li .icon i {
+	font-size: 48px;
+    line-height: 55px;
+    height: 50px;
+}
+
+.school_index .task_list li .task {
+	float: left;
+}
+
+.school_index .task_list li .task p {
+	margin: 5px 0 0 10px;
+	line-height: 22px;
+	font-size: 16px;
+}
+.school_con p{
+	margin: 0 0 2px!important;
+}
+.sub_title b{
+    font-weight: normal!important;
+}
+.school_index .task_list li .task p:last-child {
+	font-size: 12px;
+	margin-top:0 ;
+}
+
+.school_index .task_list li div:last-child {
+	right: 28px;
+	position: absolute;
+	margin-top: 15px;
+}
+
+.school_index .task_list li .start_btn a {
+	border-radius: 2px;
+    padding: 9px 14px;
+    background: #FDBC02;
+    border: 1px solid #FDBC02;
+    color: #fff;
+}
+.school_index .task_list li .again_btn a {
+	border-radius: 2px;
+    padding: 9px 14px;
+    background: #fff;
+    border: 1px solid #FDBC02;
+    color: #FDBC02;
+}
+.school_index .task_list li .lock_btn a {
+	border-radius: 2px;
+    padding: 9px 14px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+/*********************/
+.school_con .title{
+	font-size:16px;
+	text-align: left;
+}
+.school_con .title i{
+	font-size:18px;
+	margin-left: -5px;
+}
+.school_con .sub_title{
+	font-size: 1em;
+	color: #333;
+	margin-top: 10px;
+	line-height: 1.8!important;
+}
+.school_con .con{
+	font-size: 1em;
+	line-height: 1.8!important;
+	color:#666;
+	
+}
+.school_con .tip{
+	font-size: 12px;
+	line-height: 24px;
+	color:#FF0000;
+}
+.school_con .tab {
+	    margin-top: 15px;
+    	/*height: 20px;*/
+    	display: inline-block;
+}
+.school_con .tab span{
+	background: url("../images/tab_bg.png") no-repeat right center;
+	background-size:auto 30px ;
+	padding: 5px 20px 5px 10px;
+	color: #fff;
+
+}
+.school_con .img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.school_con .img img{
+	width: 100%;
+	display:block;
+	margin: auto;
+	margin-top: 10px;
+}
+.toolbar-inner{
+	padding: 0;
+}
+.toolbar{height: 65px;background: #fff;}
+.toolbar:before{ height: 0;}
+.toolbar-inner .btn{
+	position: absolute;
+    bottom: 10px;
+    width: 94%;
+    left: 3%;
+    z-index: 9;
+}
+.toolbar-inner .btn a{
+	letter-spacing: 1px;
+    float: left;
+    background: #FDBC02;
+}
+.toolbar-inner .p_btn a{
+	letter-spacing: 1px;
+    float: left;
+    background:#fff;
+    color: #FDBC02;
+    border: 1px solid #FDBC02;
+    width: 48%;
+    
+}
+.toolbar-inner .p_btn{ 
+	position: absolute;
+    bottom: 10px;
+    width: 94%;
+    left: 3%;
+    z-index: 9;
+}
+.toolbar-inner .p_btn a:last-child{
+    margin-left: 4%;
+    background: #FDBC02;
+    color: #fff;
+}
+.toolbar-inner .line{
+	height: 1px;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+}
+.toolbar-inner .line i{
+	height: 1px;
+    background: #FDBC02;
+    position: absolute;
+}

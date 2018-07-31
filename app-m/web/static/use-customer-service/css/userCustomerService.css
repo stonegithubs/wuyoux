@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    /*text-size-adjust:100%;*/
+    height: 100vh;
+    position: fixed;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container a{
+    text-decoration: none;
+    position: relative;
+}
+.h1{
+    font-size: 1.3em!important;
+    color: black!important;
+    margin: 30px 0 18px 0;
+}
+.container p{
+    color: #999;
+    font-size: .9em;
+}
+.customer{
+    padding: 0 8% 0 8%;
+    height: 100%!important;
+    overflow: auto!important;
+}
+.customer-row{
+    display: flex;
+}
+.customer-row img{
+    width: 50px;
+    height: 50px;
+}
+.customer-row p{
+    color: black;
+    margin-left: 15px;
+}
+.customer-font{
+    display: flex;
+    margin-left: 65px;
+}
+.customer-font p{
+    -webkit-margin-before: .5em;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.customer-font p:nth-child(1) {
+    -webkit-box-flex: 40;
+    -ms-flex: 40;
+    flex: 40;
+}
+
+.customer-font p:nth-child(2) {
+    -webkit-box-flex:2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-left: 30px;
+}
+.customer-font img{
+    width: 7px;
+}
+.customer-footer{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    height: 18%;
+}
+.footer-width{
+    width: 60%;
+    height: 100%;
+    border-radius: 50px;
+    outline: 0;
+    background: url("/static/use-customer-service/img/btn_service_online.png") no-repeat center;
+    background-size: 100%;
+    float: left;
+}
+.footer-second{
+    width: 30%;
+    height: 100%;
+    background: url(/static/use-customer-service/img/btn_service.png) no-repeat center;
+    background-size: 100%;
+    padding-right: 15px;
+    margin-right: 20px;
+    right: 0;
+    position: absolute!important;
+}
+.font{
+    padding:5%;
+}
+.font .h1{
+    font-size: 1em!important;
+    margin-bottom: 30px;
+}
+.font p{
+    color:black!important;
+    letter-spacing: 1px;
+   line-height: 1.8;
+}
+
+.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.item p{
+    -webkit-margin-before: 0;
+}
+.item p:nth-child(1) {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    width: 13rem;
+}
+
+.item p:nth-child(2) {
+    -webkit-box-flex: 40;
+    -ms-flex: 40;
+    flex: 40;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/use-customer-service/css/userCustomerService.css">
+    <script type="text/javascript" src="/static/js/vue.js"></script>
+    <title>常见问题</title>
+    <style type="text/css">
+        .container {
+            overflow: auto;
+            height: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="content">
+    <div class="font" align="center" v-if="doc==='register_code'">
+        <h1 class="h1">注册时收不到验证码</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>网络差收不到验证码</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>验证码一天只能请求5次，接收5条验证码</p>
+            </div>
+            <div class="item">
+                <p>3、</p>
+                <p>已注册过的号码，收不到验证码</p>
+            </div>
+            <div class="item">
+                <p>4、</p>
+                <p>第一次发送成功后有一段的时间限制</p>
+            </div>
+            <div class="item">
+                <p>5、</p>
+                <p>手机安全管家（如360、腾讯等管理软件），是否设置了拒绝接收</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='register_position'">
+        <h1 class="h1">注册会提示“定位失败，请返回重试”</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>下载APP安装后，进入启动页会提示“无忧帮帮，需要使用您的位置权限，您是否允许”，需要选择“始终允许”</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>需把GPS定位权限开启</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='push_error'">
+        <h1 class="h1">小帮接收不到订单推送</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>网络差，推送会延时</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>小帮的接单范围是否在推送范围内</p>
+            </div>
+            <div class="item">
+                <p>3、</p>
+                <p>是否允许接收推送，后台运行，有没有允许手机的app权限提醒</p>
+            </div>
+            <div class="item">
+                <p>4、</p>
+                <p>是否有未完成的摩的订单(已接单，未接到乘客)，来新订单没有推送</p>
+            </div>
+            <div class="item">
+                <p>5、</p>
+                <p>小帮手机是否有关闭了定位，造成没推送</p>
+            </div>
+            <div class="item">
+                <p>6、</p>
+                <p>小帮没有上班，不处于上班状态</p>
+            </div>
+            <div class="item">
+                <p>7、</p>
+                <p>小帮位置没及时更新，（解决方法，重新上下班，更新小帮位置）</p>
+            </div>
+            <div class="item">
+                <p>8、</p>
+                <p>各别质量较差的机器，可能存在GPS定位不准或信号较差的情况，位置存在偏差，造成没有推送</p>
+            </div>
+            <div class="item">
+                <p>9、</p>
+                <p>小帮在后台运行熄屏的情况，一般大概5分钟后会接收不到订单的推送，因为程序在退出后台运行时，如果长时间没有操作，手机会直接关闭程序</p>
+            </div>
+            <div class="item">
+                <p>10、</p>
+                <p>后台运行，如果长时间未开启应用，手机会默认程序为关闭状态，此时将接收不到推送</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='position_deviation'">
+        <h1 class="h1">小帮定位位置会有偏差</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>未开启GPS定位</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>未开启WIFI（不需要连接，附近有热点即可定位到位置）</p>
+            </div>
+            <div class="item">
+                <p>3、</p>
+                <p>联通卡在部分城市可能存在定位有偏差的情况</p>
+            </div>
+            <div class="item">
+                <p>4、</p>
+                <p>各别质量较差的机器，可能存在GPS定位不准或信号较差的情况，位置存在偏差</p>
+            </div>
+            <div class="item">
+                <p>5、</p>
+                <p>可开启滴滴、百度、高德地图等软件进行当前地址的对比</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='biz_address_deviation'">
+        <h1 class="h1">企业送订单，小帮配送到达后生成的地址有偏差</h1>
+        <p class="font-body" align="left">
+            配送到达的地址，是根据小帮的手机定位来计算距离的，
+            所以小帮的手机必须开启数据流量、GPS、WIFI（WIFI必
+            须开启，可精确定位）
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='user_info_incomplete'">
+        <h1 class="h1">小帮抢单后界面位置及用户信息等显示不全</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>可能出现网络请求失败，需要检查网络，退出后再重新进入即可恢复正常</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>位置未显示，小帮未开启定位功能，需要开启定位</p>
+            </div>
+            <div class="item">
+                <p>3、</p>
+                <p>在请求数据时，用户取消订单</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='order_num_inaccurate'">
+        <h1 class="h1">今日接单有5单，但怎么显示4单</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>在“订单管理”里检查是否有未完成订单及未付款的订单</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>数据未刷新，小帮上下班或退出账号重新登陆</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='not_account'">
+        <h1 class="h1">订单配送完成后，配送费用没有到账</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>快送类订单，小帮配送完成后，此订单已属完成状态，用户在没有确认的情况下，配送费用将在24小时内到账</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>企业送订单，小帮配送完成后，用户还没有支付，12个时候会自动从用户账号扣款到平台，24个小时内会到账小帮用户账号。</p>
+            </div>
+            <div class="item">
+                <p>3、</p>
+                <p>企业送订单，如果用户账户余额不足，系统不能完成自动扣款，我们客服会联系用户完成支付。</p>
+            </div>
+        </div>
+    </div>
+    <div class="font" align="center" v-if="doc==='power_problem'">
+        <h1 class="h1">小帮版耗电问题</h1>
+        <div class="font-body" align="left">
+            <div class="item">
+                <p>1、</p>
+                <p>因开启了实时定位功能，小帮版会间隔性的刷新定位，此问题无法避免，但在同类的产品中已经算是优秀的了，我们将继续优化</p>
+            </div>
+            <div class="item">
+                <p>2、</p>
+                <p>订单不多时可关闭屏幕进行待机，屏幕不要调太亮，避免耗电的问题</p>
+            </div>
+        </div>
+    </div>
+    <!--用户客服中心常见问题-->
+    <div class="font" align="center" v-if="doc==='get_store'">
+        <h1 class="h1">小帮到店无货取问题</h1>
+        <p class="font-body" align="left">
+            在您下单后，平台系统会根据您的下单数量估算匹配相应的小帮数量，请您提前分配好小帮应取的订单数，以防后到的小帮到店无货取，若出现先到店的小帮取完货物，请您及时致电小帮双方沟通解决。
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='not_create_order'">
+        <h1 class="h1">未支付小帮服务费，不能下单？</h1>
+        <p class="font-body" align="left">
+            当一个订单已完成时，但是您尚未支付，在该订单从完成的时间开始的4个小时内，您还是可以继续下单的。但是在4个小时后，就不能继续下单
+            您必须支付完4个小时前的已完成订单后，才可以下单。
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='how_charge'">
+        <h1 class="h1">怎么收费的？</h1>
+        <p class="font-body" align="left">
+            您好，我们平台是按照订单距离进行收费，当您入驻企业用户时我们已记录您的发货起点，小帮到达收货地点点击配送到达我们会自动记录终点位置，系统会自动计算出价格，所以最终费用需要小帮配送到达后才能计算，具体收费标准可在个人中心-设置-计价规则中查看或在支付时在计价明细-计价规则上查看。
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='service_charge_unreasonable'">
+        <h1 class="h1">订单服务费不合理？</h1>
+        <p class="font-body" align="left">
+            如对订单需支付的服务费用有不合理的时候应停止支付并及时致电客服，与客服说明相应的问题，我们会进行核实并及时向您反馈处理结果。
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='automatic_deduction'">
+        <h1 class="h1">平台会自动扣费？</h1>
+        <p class="font-body" align="left">
+            如果您有一个尚未手动操作支付的已完成订单，
+            而且超过了从完成的时间开始的12个小时了，
+            平台会自动从您的账号余额里面扣除订单金额
+            预付款到无忧帮帮平台上。如果您的余额不足，
+            我们客服会联系您，提醒您支付订单金额。另外
+            如果预付款平台后，您可以在12个小时内核实订
+            单信息。如果有疑问尽快和我们客服联系处理，如
+            果超过从完成的时间开始的24个小时后，平台会把预付款转到小帮账号上。出现订单问题，
+            平台也不做任何处理。
+        </p>
+    </div>
+    <div class="font" align="center" v-if="doc==='how_claim'">
+        <h1 class="h1">若配送物品损坏，如何理赔？</h1>
+        <p class="font-body" align="left">
+            目前，无忧帮帮平台不提供物品包装服务，易烂、易碎等物品需由发货人提前做好包装，如因小帮在配送过程中导致的损坏，请致电客服，我们会进行核实并做相应处理，如因客户没包装好导致的损坏，无忧帮帮公司不承担任何责任。
+        </p>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    /**
+     * 获取链接参数公共函数
+     * @param name
+     * @returns {*}
+     */
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    new Vue({
+        el: "#content",
+        data: {
+            doc: getQueryString('doc')
+        }
+    })
+</script>
+</html>

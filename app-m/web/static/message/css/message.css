@@ -1,0 +1,55 @@
+.pages .page{ background:#f1f1f1;}
+.list-block .item-content{ padding:10px;}
+.list-block .item-text{ font-size:12px; height:auto; padding-top:5px;}
+.list-block .item-inner:after, .list-block ul:after, .content-block-inner:after{     height: 0;background-color:none !important;}
+.list-block li:after{
+	content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;}
+.content-block-inner{ padding:15px; margin:0; width:auto;    line-height: 25px;}
+.content-block{     margin: 20px 0;}
+.detail{    background: #f1f1f1 !important;}
+.detail .item-text{ font-size:12px; color:#999;}	
+.detail .item-subtitle{ font-size:18px;}	
+.swipeout-actions-opened a:first-child{ display:none;}
+
+/*******我的信息**********/
+
+#my_message .list-block .iconfont {
+	font-size: 24px;
+	color: #fff;
+	padding: 5px 6px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#my_message .list-block .item-inner {
+	line-height: 40px;
+}
+
+#my_message_list .list-block .item-after {
+	font-size: 12px
+}
+
+#my_message_list .list-block .item-text {
+	height: auto;
+	font-size: 12px;
+	line-height: 28px;
+}
+.message-list ul{ margin: 20px 0;}
+.message-list li{ margin-bottom: 20px;}
+.message-list .data{font-size: 12px;text-align: center; color: #999;margin: 0 0 10px 0;}
+.message-list .message{margin-left: 5%;box-shadow: 2px 2px 2px #eee; background: #fff;border: 1px solid #ddd; max-width: 90% !important; margin-left: 5%; border-radius: 4px;}
+.message-list .message-title{ padding:15px 15px 0px;font-size: 16px;}
+.message-list .messages-date{ text-align: left; color: #999;  padding:5px 15px; margin: 0;}
+.message-list .message-text{ font-size: 13px !important; color: #666;    padding: 8px 15px 15px;}

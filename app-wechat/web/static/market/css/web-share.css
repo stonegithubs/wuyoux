@@ -1,0 +1,110 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    min-height: 100%;
+}
+
+.manneimg {
+    height:78vh;
+    width: 100%;
+    pointer-events:none;
+    box-shadow: 0 0 12px #7eb0ff;
+    border-radius: 9px;
+}
+
+.footer_btn {
+    width: 100%;
+    height: 15vh;
+    margin-top: 5px;
+    border-radius: 9px;
+    box-shadow: 0 0 12px #7eb0ff;
+    color: #fff;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_btn div {
+    width: 40%;
+    height: 42px;
+    background: rgb(43, 44, 49);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_btn div:nth-child(1) {
+    margin-right: 18px;
+}
+
+.main_box {
+    padding: 23px 16px;
+    width: 100%;
+    height: 100vh;
+    background: url(/static/market/img/sucbg.png);
+}
+.introduce_box {
+    width: 100%;
+    height: 100%;
+    background: #4978FD;
+}
+
+.img_home {
+    width: 100%;
+    pointer-events:none;
+    height: auto;
+    padding-bottom: 45px;
+}
+
+.foot_joinBtn {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.foot_joinBtn button{
+    width: 100%;
+    height: 2.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none;
+    border-color: transparent;
+    background: linear-gradient(to bottom,#ffe756,#ffd11c);
+}
+
+.jdialog-toast{
+    height: 60px;
+    width: 60%;
+    background: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 9999999;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 50%;
+    left: 25%;
+}
+
+textarea {
+    position: absolute;
+    left: 17%;
+    z-index: -999;
+}

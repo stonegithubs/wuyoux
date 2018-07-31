@@ -1,0 +1,63 @@
+.infinite-scroll-preloader .preloader {
+    width: 15px;
+    height: 15px;
+}
+.infinite-scroll-preloader ul li {
+    display: inline;
+    padding-right: 5px;
+}
+.infinite-scroll-preloader ul li span {
+    position: relative;
+    bottom: 2px;
+}
+
+/** 分页页尾样式 **/
+.page-tail {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 9px;
+}
+.page-tail-wrap {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    /*margin-left: 50%;*/
+    /* 左外边距宽度的一半，50% */
+    text-align: center;
+}
+.page-tail-title {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    font-weight: 500;
+}
+/*伪元素实现*/
+.page-tail-title:before {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    right: 3%;
+    content: "";
+    width: 20%;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page-tail-title:after {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    left: 3%;
+    content: "";
+    width: 20%;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.infinite-scroll-preloader span {
+    position: relative;
+    bottom: 6px;
+}
+.infinite-scroll-preloader {
+    width: 100%;
+    margin: 0 !important;
+}

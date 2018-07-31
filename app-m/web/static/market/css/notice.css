@@ -1,0 +1,23 @@
+.notice {
+    /*width: 100%;!*单行显示，超出隐藏*!*/
+    height: 35px;/*固定公告栏显示区域的高度*/
+    padding: 0 30px;
+    overflow: hidden;
+}
+.notice ul,.notice li{
+    padding: 0;
+    margin: 0;
+    -webkit-padding-start: 0px;
+}
+.notice ul li {
+    list-style: none;
+    line-height: 35px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 6px;
+    width: 90%;
+    font-size: .8em;
+}
